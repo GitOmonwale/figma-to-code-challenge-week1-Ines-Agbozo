@@ -37,7 +37,7 @@
     right: 30px;
     top: 30px;
     cursor: pointer;
-    display: none;
+    opacity: 0;
 }
 
 
@@ -559,7 +559,7 @@ hr {
     }
 
     .hamburger {
-        display: block;
+        opacity: 1;
         position: absolute;
         top: 15px;
     }
@@ -569,6 +569,7 @@ hr {
         position: absolute;
         top: 15px;
         z-index: 5;
+        opacity: 1;
     }
 
     .menu ul {
@@ -603,7 +604,6 @@ hr {
 
     .btnmobile {
         color: blue;
-        margin-left: 100px;
         display: flex;
         height: 40px;
         align-items: center;
@@ -613,6 +613,7 @@ hr {
         border-radius: 100px;
         padding: 5px 20px;
         width: 200px;
+        margin: auto;
     }
 
     .btn.btnnav {
@@ -680,7 +681,7 @@ hr {
         .card{
             position: absolute;
             opacity: 0;
-            transition: 0.5s ease-out;
+            transition: 0.2s ease-out;
         }
         .card.active{
 opacity: 1;
@@ -691,6 +692,12 @@ opacity: 1;
 
 
  @media screen and  (max-width:500px) {
+ 
+    .presentation, .about_me,.services,.base_and_whyhim,.their_testimonials{
+       padding-top: 50px;
+       padding-bottom: 50px;
+    } 
+
     .text-content,.about_container,.topsection{
         width: 300px;
     }
@@ -736,7 +743,7 @@ display: block;
 .testimonial_details{
     position: absolute;
     opacity: 0;
-    transition: 0.5s ease-out;
+    transition: 0.2s ease-out;
 }
 .testimonial_details.active-testi{
 opacity: 1;
@@ -746,193 +753,4 @@ opacity: 1;
  }
 
 
-/*@media screen and (max-width:1019px) {
-
-    .menu_header,
-    .header_left {
-        display: block;
-    }
-
-    .presentation {
-        position: relative;
-
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 15px;
-    }
-
-    .cross {
-        display: block;
-        position: absolute;
-        top: 15px;
-        z-index: 5;
-    }
-
-    .menu ul {
-        background-color: rgb(0, 0, 255);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        gap: 50px;
-        justify-content: center;
-        text-align: center;
-        padding-left: 0px;
-        margin-left: -100%;
-        transition: all 0.5s ease;
-    }
-
-    .menu ul li a {
-        color: #d7e1f3;
-        font-size: larger;
-
-    }
-
-    .menu ul.mobile-menu {
-        margin-left: 0;
-        transition: all 0.5s ease;
-    }
-
-    .btnmobile {
-        color: blue;
-        margin-left: 100px;
-        display: flex;
-        height: 40px;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        border-style: none;
-        border-radius: 100px;
-        padding: 5px 20px;
-        width: 200px;
-    }
-
-    .btn.btnnav {
-        display: none;
-    }
-
-    .logo_doctor {
-        margin-bottom: 20px;
-        margin-left: 40px;
-
-    }
-
-    .twodoctor_img,
-    .doctor_img,
-    .patienthuman_img {
-        width: 300px;
-    }
-
-    .text-content {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .boite {
-        width: 300px;
-        margin-right: 60px;
-        justify-content: center;
-    }
-
-    .why {
-        padding: 50px;
-    }
-
-    .listitems {
-        position: relative;
-        margin: 0
-    }
-
-    .why img {
-        width: 400px;
-    }
-
-    .boite img {
-        width: 20px;
-    }
-
-    .testimonial {
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, auto);
-        gap: 20px;
-        overflow-x: scroll;
-        position: relative;
-
-    }
-
-    .their_testimonials {
-        position: relative;
-    }
-
-    .their_testimonials::before {
-        content: url(chevron-left\ \(1\).png);
-        position: absolute;
-        bottom: 150px;
-        left: -2px;
-        z-index: 4;
-    }
-
-    .their_testimonials::after {
-        content: url(chevron-left.png);
-        position: absolute;
-        bottom: 150px;
-        right: 0px;
-    }
-
-    .testimonial_details {
-        width: 400px;
-    }
-
-    .testimonial::-webkit-scrollbar {
-        display: none;
-    }
-
-    footer,
-    .infos {
-        padding-left: 10px;
-    }
-
-    .infos {
-        align-items: flex-start;
-    }
-
-    .adress,
-    .company_info,
-    .book_now,
-    .contact {
-
-        align-items: flex-start;
-
-
-    }
-
-
-
-
-    .copyright {
-        left: 20px;
-
-    }
-}
-
- @media screen and (max-width:600px) {
-    .booking {
-        width: 100px;
-    }
-
-    .booking p {
-        width: 300px;
-    }
-} */
+ 

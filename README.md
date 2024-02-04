@@ -5,4 +5,4 @@ Il s'agit d'une landing page conçue pour le docteur Mathew. C"est une maquette 
 ## CSS
 ## Javascript
 # Lien vers la demo
-http://figma-to-code-challenge-week1-cisse.vercel.app/
+ https://figma-to-code-challenge-week1-ines-agbozo.vercel.app
